@@ -10,6 +10,6 @@ public class Greeter {
 
   public final String greet(final String someone) {
     private String message = "Hello " + someone ;
-    return message;
+    return message; 
   }
 }
