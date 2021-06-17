@@ -9,6 +9,7 @@ public class Greeter {
   }
 
   public final String greet(final String someone) {
-    return String.format("Hello babacar, %s!", someone);
+    private String message ="Hello babacar, %s!";
+    return String.format(message, someone);
   }
 }
