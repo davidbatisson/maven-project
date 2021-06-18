@@ -1,9 +1,13 @@
 package com.example;
 
-// class Greeter
+/**
+* Description : class Greeter
+*/
 public class Greeter {
 
-  // methode
+  /**
+  * Constructeur vide
+  */
   public Greeter() {
 
   }
