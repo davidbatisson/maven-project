@@ -14,8 +14,8 @@ public class Greeter {
   
   /**.
   * methode qui retourne un message
-  * @param nom de la personne
-  * @return le message
+  * @param someone nom de la personne
+  * @return String le message personnalise
   */
   public final String greet(final String someone) {
     String message = "Hello " + someone;
