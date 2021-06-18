@@ -8,7 +8,11 @@ public class Greeter {
 
   }
 
-  /"" methode greet @param nom de la personne @return message en sortie   */
+  /"" 
+    * methode greet 
+    * @param nom de la personne 
+    * @return message en sortie
+    */
   public final String greet(final String someone) {
     String message = "Hello " + someone;
     return message;
