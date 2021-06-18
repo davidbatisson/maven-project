@@ -21,13 +21,18 @@
     <module>webapp</module>
   </modules>
 
-  <distributionManagement>
-    <site>
-      <id>site-server</id>
-      <name>Project Site</name>
-      <url>file:///tmp/maven-project-site</url>
-    </site>
-  </distributionManagement>
+	<distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<name>Nexus Releases</name>
+			<url>http://localhost:8081/repository/maven-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus</id>
+			<name>Nexus Snapshot</name>
+			<url>http://localhost:8081/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 
   <build>
     <plugins>
@@ -205,13 +210,6 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-
-  <scm>
-    <connection>scm:git:git@github.com:babsmbaye88/maven-project.git</connection>
-    <developerConnection>scm:git:git@github.com:babsmbaye88/maven-project.git</developerConnection>
-    <tag>HEAD</tag>
-    <url>http://github.com/babsmbaye88/maven-project</url>
-  </scm>
 
   <prerequisites>
     <maven>3.0.3</maven>
